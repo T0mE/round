@@ -11,344 +11,351 @@ html {
 	font-size: 10px;
 }
 
+header > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
+	width: 376px;
+}
+
+.information {
+	height: 85vh;
+}
+
+.name {
+	font-size: 1.8rem;
+	letter-spacing: 2px;
+}
+
+.icons .fa {
+	font-size: 1.8rem;
+	letter-spacing: 2px;
+	padding: 12px;
+}
+
+.main {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.about {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+}
+
+.author p {
+	width: 176px;
+	height: 250px;
+	background: rgba(40, 36, 36, 0.185);
+	z-index: 1;
+}
+
+.welcome > p {
+	font-size: 5rem;
+	line-height: 1;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.about-me {
+	font-size: 2rem;
+	letter-spacing: 1.5px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.contact > p {
+	font-size: 2rem;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	margin-top: 20px;
+}
+
+.about-underline {
+	text-decoration: underline;
+	text-underline-offset: 12px;
+	text-decoration-color: #b6ffab;
+}
+
+/* .line-contact > span {
+	display: block;
+	position: absolute;
+	top: 650px;
+	left: 135px;
+	width: 105px;
+	height: 3px;
+	background-color: #b6ffab;
+} */
+
+/* .line > span {
+	position: absolute;
+	top: 490px;
+	right: 70px;
+	display: block;
+	width: 190px;
+	height: 5px;
+	background-color: #b6ffab;
+} */
+
+.rounds {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 3px solid #605e5e;
+	transform: rotateX(-74deg);
+}
+
+.pos-1 {
+	position: absolute;
+	top: 45px;
+	left: -110px;
+}
+
+.pos-2 {
+	position: absolute;
+	top: 60px;
+	left: -110px;
+}
+
+.pos-3 {
+	position: absolute;
+	top: 75px;
+	left: -110px;
+}
+
+.pos-4 {
+	position: absolute;
+	top: 90px;
+	left: -110px;
+}
+
+.pos-5 {
+	position: absolute;
+	top: 105px;
+	left: -110px;
+}
+
+.separate {
+	width: 100%;
+	height: 3px;
+	background: #fff;
+}
+
+.experience {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.experience > div {
+	padding: 15px 0;
+}
+
+.experience > div > h2 {
+	font-size: 3rem;
+}
+
+.experience > div > p {
+	font-size: 2rem;
+	color: #ddd;
+	text-transform: capitalize;
+}
+
+.roun {
+	overflow: hidden;
+	position: relative;
+}
+
+.pos-6 {
+	position: absolute;
+	top: 1240px;
+	/* left: -110px; */
+}
+
+.pos-7 {
+	position: absolute;
+	top: 1255px;
+	left: -110px;
+}
+
+.pos-8 {
+	position: absolute;
+	top: 1270px;
+	left: -110px;
+}
+
+.pos-9 {
+	position: absolute;
+	top: 1285px;
+	left: -110px;
+}
+
+.pos-10 {
+	position: absolute;
+	top: 1300px;
+	left: -110px;
+}
+
+.project > div {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.project > div > h2 {
+	font-size: 3.6rem;
+	letter-spacing: 2px;
+}
+
+.project > div > p {
+	position: relative;
+	top: 20px;
+	font-size: 2rem;
+	line-height: 0.5;
+	letter-spacing: 2.5px;
+}
+
+.underline > span {
+	display: inline-block;
+	width: 100%;
+	height: 2px;
+	background: #b6ffab;
+}
+
+.path {
+	height: 254px;
+	background: #8d8b8b71;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.portfolio > div > h3 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+.technology > p {
+	display: inline-block;
+	font-size: 2.4rem;
+	margin-right: 20px;
+}
+
+.source > p {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 2.4rem;
+	line-height: 1;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.source > p > span {
+	display: inline-block;
+	width: 100%;
+	height: 2px;
+	background: #b6ffab;
+}
+
+footer {
+	background-color: #242424;
+	margin-top: 50px;
+	padding: 0 15px;
+}
+
+footer > h2 {
+	font-size: 3.6rem;
+	text-align: center;
+	letter-spacing: 2px;
+	padding-top: 50px;
+}
+
+footer > p {
+	font-size: 1.8rem;
+	letter-spacing: 2px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.form > input {
+	text-transform: uppercase;
+	border: none;
+	width: 100%;
+	background-color: #242424;
+	border-bottom: 1px solid #fff;
+	padding: 20px;
+}
+
+.form > textarea {
+	text-transform: uppercase;
+	border: none;
+	width: 100%;
+	background-color: #242424;
+	border-bottom: 1px solid #fff;
+	font-size: 1.6rem;
+	padding: 20px;
+}
+
+.form > button {
+	display: block;
+	position: relative;
+	left: 200px;
+	text-transform: uppercase;
+	border: none;
+	border-bottom: 1px solid #b6ffab;
+	background-color: #242424;
+	color: #fff;
+	padding: 20px;
+	cursor: pointer;
+}
+
+footer > .separate {
+	margin: 70px 0 40px 0;
+}
+
+.media {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+.footer-rounds > .rounds:first-child {
+	position: absolute;
+	top: 4520px;
+	left: -110px;
+}
+
+.footer-rounds > .rounds:nth-child(2) {
+	position: absolute;
+	top: 4530px;
+	left: -110px;
+}
+
+.footer-rounds > .rounds:nth-child(3) {
+	position: absolute;
+	top: 4540px;
+	left: -110px;
+}
+
+.footer-rounds > .rounds:nth-child(4) {
+	position: absolute;
+	top: 4550px;
+	left: -110px;
+}
+
+.footer-rounds > .rounds:nth-child(5) {
+	position: absolute;
+	top: 4560px;
+	left: -110px;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 376px) {
-	header > div {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 15px;
-		width: 376px;
-	}
-
-	.information {
-		height: 85vh;
-	}
-
-	.name {
-		font-size: 1.8rem;
-		letter-spacing: 2px;
-	}
-
-	.icons .fa {
-		font-size: 1.8rem;
-		letter-spacing: 2px;
-		padding: 12px;
-	}
-
-	.main {
-		padding: 0 15px;
-		width: 376px;
-	}
-
-	.about {
-		display: flex;
-		flex-direction: column-reverse;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.author p {
-		width: 176px;
-		height: 250px;
-		background: rgba(40, 36, 36, 0.185);
-		z-index: 1;
-	}
-
-	.welcome > p {
-		font-size: 5rem;
-		line-height: 1;
-		text-align: center;
-		padding: 20px 0;
-	}
-
-	.about-me {
-		font-size: 2rem;
-		letter-spacing: 1.5px;
-		text-align: center;
-		line-height: 1.5;
-	}
-
-	.contact > p {
-		font-size: 2rem;
-		text-transform: uppercase;
-		text-align: center;
-		letter-spacing: 3px;
-		margin-top: 20px;
-	}
-
-	.line-contact > span {
-		display: block;
-		position: absolute;
-		top: 650px;
-		left: 135px;
-		width: 105px;
-		height: 3px;
-		background-color: #b6ffab;
-	}
-
-	.line > span {
-		position: absolute;
-		top: 490px;
-		right: 70px;
-		display: block;
-		width: 190px;
-		height: 5px;
-		background-color: #b6ffab;
-	}
-
-	.rounds {
-		width: 300px;
-		height: 300px;
-		border-radius: 50%;
-		border: 3px solid #605e5e;
-		transform: rotateX(-74deg);
-	}
-
-	.pos-1 {
-		position: absolute;
-		top: 45px;
-		left: -110px;
-	}
-
-	.pos-2 {
-		position: absolute;
-		top: 60px;
-		left: -110px;
-	}
-
-	.pos-3 {
-		position: absolute;
-		top: 75px;
-		left: -110px;
-	}
-
-	.pos-4 {
-		position: absolute;
-		top: 90px;
-		left: -110px;
-	}
-
-	.pos-5 {
-		position: absolute;
-		top: 105px;
-		left: -110px;
-	}
-
-	.separate {
-		width: 100%;
-		height: 3px;
-		background: #fff;
-	}
-
-	.experience {
-		text-align: center;
-		margin-top: 30px;
-	}
-
-	.experience > div {
-		padding: 15px 0;
-	}
-
-	.experience > div > h2 {
-		font-size: 3rem;
-	}
-
-	.experience > div > p {
-		font-size: 2rem;
-		color: #ddd;
-		text-transform: capitalize;
-	}
-
-	.roun {
-		overflow: hidden;
-		position: relative;
-	}
-
-	.pos-6 {
-		position: absolute;
-		top: 1240px;
-		/* left: -110px; */
-	}
-
-	.pos-7 {
-		position: absolute;
-		top: 1255px;
-		left: -110px;
-	}
-
-	.pos-8 {
-		position: absolute;
-		top: 1270px;
-		left: -110px;
-	}
-
-	.pos-9 {
-		position: absolute;
-		top: 1285px;
-		left: -110px;
-	}
-
-	.pos-10 {
-		position: absolute;
-		top: 1300px;
-		left: -110px;
-	}
-
-	.project > div {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 30px;
-	}
-
-	.project > div > h2 {
-		font-size: 3.6rem;
-		letter-spacing: 2px;
-	}
-
-	.project > div > p {
-		position: relative;
-		top: 20px;
-		font-size: 2rem;
-		line-height: 0.5;
-		letter-spacing: 2.5px;
-	}
-
-	.underline > span {
-		display: inline-block;
-		width: 100%;
-		height: 2px;
-		background: #b6ffab;
-	}
-
-	.path {
-		height: 254px;
-		background: #8d8b8b71;
-		margin: 0 auto;
-		margin-top: 25px;
-	}
-
-	.portfolio > div > h3 {
-		font-size: 3rem;
-		text-transform: uppercase;
-		padding: 10px 0;
-	}
-
-	.technology > p {
-		display: inline-block;
-		font-size: 2.4rem;
-		margin-right: 20px;
-	}
-
-	.source > p {
-		display: inline-block;
-		text-transform: uppercase;
-		font-size: 2.4rem;
-		line-height: 1;
-		margin-right: 20px;
-		margin-top: 20px;
-	}
-
-	.source > p > span {
-		display: inline-block;
-		width: 100%;
-		height: 2px;
-		background: #b6ffab;
-	}
-
-	footer {
-		background-color: #242424;
-		margin-top: 50px;
-		padding: 0 15px;
-	}
-
-	footer > h2 {
-		font-size: 3.6rem;
-		text-align: center;
-		letter-spacing: 2px;
-		padding-top: 50px;
-	}
-
-	footer > p {
-		font-size: 1.8rem;
-		letter-spacing: 2px;
-		text-align: center;
-		padding-top: 20px;
-	}
-
-	.form > input {
-		text-transform: uppercase;
-		border: none;
-		width: 100%;
-		background-color: #242424;
-		border-bottom: 1px solid #fff;
-		padding: 20px;
-	}
-
-	.form > textarea {
-		text-transform: uppercase;
-		border: none;
-		width: 100%;
-		background-color: #242424;
-		border-bottom: 1px solid #fff;
-		font-size: 1.6rem;
-		padding: 20px;
-	}
-
-	.form > button {
-		display: block;
-		position: relative;
-		left: 200px;
-		text-transform: uppercase;
-		border: none;
-		border-bottom: 1px solid #b6ffab;
-		background-color: #242424;
-		color: #fff;
-		padding: 20px;
-		cursor: pointer;
-	}
-
-	footer > .separate {
-		margin: 70px 0 40px 0;
-	}
-
-	.media {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-bottom: 50px;
-	}
-
-	.footer-rounds > .rounds:first-child {
-		position: absolute;
-		top: 4520px;
-		left: -110px;
-	}
-
-	.footer-rounds > .rounds:nth-child(2) {
-		position: absolute;
-		top: 4530px;
-		left: -110px;
-	}
-
-	.footer-rounds > .rounds:nth-child(3) {
-		position: absolute;
-		top: 4540px;
-		left: -110px;
-	}
-
-	.footer-rounds > .rounds:nth-child(4) {
-		position: absolute;
-		top: 4550px;
-		left: -110px;
-	}
-
-	.footer-rounds > .rounds:nth-child(5) {
-		position: absolute;
-		top: 4560px;
-		left: -110px;
-	}
 }
 
 /* // Medium devices (tablets, 768px and up) */
