@@ -20,7 +20,7 @@ header > div {
 }
 
 .information {
-	height: 85vh;
+	margin-bottom: 50px;
 }
 
 .name {
@@ -37,6 +37,7 @@ header > div {
 .main {
 	margin: 0 auto;
 	width: 90%;
+	max-width: 1200px;
 }
 
 .about {
@@ -80,26 +81,6 @@ header > div {
 	text-underline-offset: 12px;
 	text-decoration-color: #b6ffab;
 }
-
-/* .line-contact > span {
-	display: block;
-	position: absolute;
-	top: 650px;
-	left: 135px;
-	width: 105px;
-	height: 3px;
-	background-color: #b6ffab;
-} */
-
-/* .line > span {
-	position: absolute;
-	top: 490px;
-	right: 70px;
-	display: block;
-	width: 190px;
-	height: 5px;
-	background-color: #b6ffab;
-} */
 
 .rounds {
 	width: 300px;
@@ -266,14 +247,14 @@ footer {
 	padding: 0 15px;
 }
 
-footer > h2 {
+footer div > h2 {
 	font-size: 3.6rem;
 	text-align: center;
 	letter-spacing: 2px;
 	padding-top: 50px;
 }
 
-footer > p {
+footer div > p {
 	font-size: 1.8rem;
 	letter-spacing: 2px;
 	text-align: center;
@@ -353,17 +334,187 @@ footer > .separate {
 	left: -110px;
 }
 
-/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 768px) {
+	header > div {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
 
-@media (min-width: 376px) {
-}
+	.author p {
+		position: relative;
+		top: -75px;
+		right: -25px;
+		width: 200px;
+		height: 300px;
+		background: rgba(40, 36, 36, 0.185);
+		z-index: 1;
+	}
 
-/* // Medium devices (tablets, 768px and up) */
+	.about {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
 
-@media (min-width: 992px) {
+	.portfolio {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.portfolio > div {
+		min-width: 45%;
+		max-width: 45%;
+	}
+
+	.experience {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.experience > div {
+		min-width: 33%;
+		max-width: 33%;
+	}
+
+	footer div > h2 {
+		font-size: 9.6rem;
+	}
+
+	footer div > p {
+		font-size: 2.2rem;
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	input,
+	textarea {
+		display: block;
+		min-width: 50%;
+		max-width: 50%;
+		margin: 0 auto;
+	}
+
+	.form > input {
+		font-size: 1.6rem;
+		font-weight: 700;
+		border-bottom: 3px solid #fff;
+	}
+
+	.form > textarea {
+		font-size: 1.6rem;
+		font-weight: 700;
+		border-bottom: 3px solid #fff;
+	}
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+	header > div {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+		padding: 15px;
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+	.about {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.about-me p {
+		text-align: left;
+		width: 50%;
+	}
+
+	.contact > p {
+		text-align: left;
+	}
+
+	.author p {
+		position: relative;
+		top: -75px;
+		width: 350px;
+		height: 500px;
+		background: rgba(40, 36, 36, 0.185);
+		z-index: 1;
+	}
+
+	.welcome > p {
+		font-size: 13rem;
+		line-height: 1;
+		text-align: right;
+		padding: 20px 0;
+	}
+	.experience > div > h2 {
+		font-size: 5rem;
+	}
+
+	.experience > div {
+		text-align: initial;
+	}
+
+	.project > div > h2 {
+		font-size: 6.6rem;
+		letter-spacing: 2px;
+	}
+
+	.portfolio {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.footer-contact {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 1200px;
+		height: 400px;
+		margin: 0 auto;
+	}
+
+	.footer-contact div {
+		width: 50%;
+	}
+
+	footer div > h2 {
+		text-align: left;
+	}
+
+	footer div > p {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.form > button {
+		display: block;
+		position: relative;
+		left: 300px;
+		text-transform: uppercase;
+		border: none;
+		border-bottom: 1px solid #b6ffab;
+		background-color: #242424;
+		color: #fff;
+		padding: 20px;
+		cursor: pointer;
+	}
+
+	.media {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		align-items: baseline;
+		padding-bottom: 50px;
+	}
+
+	footer div > h2 {
+		font-size: 5.6rem;
+	}
 }
